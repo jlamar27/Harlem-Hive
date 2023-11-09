@@ -5,11 +5,11 @@ import FAQ from './subcomponents/FAQ'
 
 export default function index() {
   return (
-    <div>
+    <>
         <Hero />
         <WhoWeAre />
         <WhyGrappling />
         <FAQ />
-    </div>
+    </>
   )
 }

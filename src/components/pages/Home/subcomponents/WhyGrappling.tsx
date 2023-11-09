@@ -8,7 +8,7 @@ export default function WhyGrappling() {
               <img src="/images/bjj-picture.png" alt="BJJ picture" />
           </div>
           <div className='text-container'>
-              <h2>Who we are</h2>
+              <h2>Why Grappling</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur reprehenderit consequuntur impedit molestiae hic fuga. In vero blanditiis mollitia quaerat eius? Similique incidunt laborum possimus!</p>
           </div>
         </div>

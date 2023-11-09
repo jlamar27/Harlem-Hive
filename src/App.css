@@ -12,13 +12,40 @@ body{
     padding: 0;
     font-family: var(--ff-primary);
     font-weight: 400;
-    font-size: 1.3125rem;
+    font-size: min(3.22vw, 3.0rem);
     line-height: 1.6;
+    background-color: #fcfdff;
 }
 
+.navbar{
+    background-color: #fcfdff;
+    margin: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero{
+    background-color: #fcfdff;
+}
 /* the middle sections add some margin on them so theyre all equal */
 section{
     padding: 3rem 0;
+    background-color: #fcfdff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-bottom: gray solid;
 }
 
 .container{
