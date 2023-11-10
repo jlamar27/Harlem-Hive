@@ -35,12 +35,13 @@ export default function FAQ() {
   };
 
   return (
-    <section>
+    <section className='faq'>
       <div className='accordion'>
+        <h2>Questions</h2>
         {faqData.map((item, i) => (
           <div className='item' key={i}>
             <div className='question' onClick={() => toggle(i)}>
-              <h2>{item.question}</h2>
+              <h4>{item.question}</h4>
               <span>{selected === i ? '-' : '+'}</span>
             </div>
             {selected === i && (
