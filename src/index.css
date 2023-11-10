@@ -1,4 +1,113 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair Display' serif;
+    --primary-color: rgb(132, 148, 131);
+    --secondary-color: rgb(162, 103, 105);
+    --accent-color: rgb(48, 77, 109);
+    --color-1: #3F4C5F;
+    --color-2: #8E757C;
+    --color-3: #888E89;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: min(4.3vw, 1.0rem);
+    line-height: 1.6;
+    /* background-color: #fcfdff; */
+    /* maybe make this same color as navbar as a theme */
+    /* background-color: green;*/
+}
+
+.navbar {
+    background-color: var(--accent-color);
+    color: whitesmoke;
+    margin: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    min-height: 2em;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    
+}
+section {
+    /* padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem; */
+    margin: 0 auto;
+}
+
+section:nth-child(odd) {
+    background-color: var(--color-2);
+}
+section:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+.accordion {
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+.container {
+    margin: 0 auto;
+    width: min(100%, 50.5rem);
+}
+
+.container h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border: solid blue;
+}
+
+.question {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 400ms ease-in;
+}
+
+.answer.show {
+    height: auto;
+    transition: all 400ms ;
+    max-height:auto ;
+}
+
+.footer {
+    background-color: var(--accent-color);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    
+}
