@@ -6,9 +6,9 @@ import FAQ from '../../components/FAQ'
 export default function index() {
   return (
     <>
-        {/* <Hero /> */}
-        {/* <WhoWeAre /> */}
-        {/* <WhyGrappling /> */}
+        <Hero />
+        <WhoWeAre />
+        <WhyGrappling />
         <FAQ />
     </>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 export default function WhyGrappling() {
   return (
     <section>
-        <div className="container">
+        <div className="container reverse">
           <div className='image-container'>
               <img src="/images/bjj-picture.png" alt="BJJ picture" />
           </div>
